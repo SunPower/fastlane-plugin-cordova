@@ -77,7 +77,7 @@ module Fastlane
             sh "npx --no-install cordova platform add #{platform} --nofetch"
           else
             if platform == 'android'
-                sh "npx --no-install cordova platform add cordova@11.0.0"
+                sh "npx --no-install cordova platform add android@11.0.0"
             else
                 sh "npx --no-install cordova platform add #{platform}"
             end
